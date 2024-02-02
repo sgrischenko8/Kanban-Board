@@ -1,0 +1,58 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+#root {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+button {
+  text-wrap: nowrap;
+}
+
+input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+#root input::placeholder {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: '>';
+}
+
+.breadcrumb,
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+}
+
+@media (max-width: 575px) {
+  .list {
+    display: block;
+  }
+}
