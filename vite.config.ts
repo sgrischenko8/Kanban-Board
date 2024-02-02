@@ -9,5 +9,8 @@ export default defineConfig({
       components: '/src/components',
     },
   },
-  base: '/',
+  base: '/kanbanboard/',
+  build: {
+    target: 'esnext',
+  },
 });
