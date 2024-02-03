@@ -19,7 +19,10 @@ const repo = {
   owner: 'facebook',
   repo: 'react-native',
   stars: 24200,
-  issues: [{ id: 1 }, { id: 2 }],
+  issues: [
+    { id: 1, title: 'first issue' },
+    { id: 2, title: 'second issue' },
+  ],
 };
 
 test('User should enter repo URL in the input on top of the page and press "Load"', () => {
